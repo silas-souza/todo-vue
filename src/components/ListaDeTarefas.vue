@@ -10,6 +10,9 @@
             {{tarefa.titulo}}
             </label>
         </li>
+        <li class="list-group-item" v-if="props.tarefas.filter(evento => evento.finalizada === false).length === 0">
+            Voce nao possui Tarefas Pendentes!
+        </li>
         </ul>
     </template>
 
